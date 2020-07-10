@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="e675666a-6d7a-4a4c-95a7-79193df50eb7"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="toms_recording"
+	namespace="Ofsted_demo">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<explicitdelayitem
+		duration="500ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+	</recorditems>
+	<repository
+	id="68bd214a-7657-4353-99e4-74c5b8c21736"
+	name="Ofsted_demoRepository"
+	relativepath="Ofsted_demoRepository.rxrep">
+		<codegen
+		classname="Ofsted_demoRepository"
+		namespace="Ofsted_demo">
+		</codegen>
+		<rootfolder
+		id="ff0984de-0aec-4132-950f-c60cfc296620"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		toms_recording.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

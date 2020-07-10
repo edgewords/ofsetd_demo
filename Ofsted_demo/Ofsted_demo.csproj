@@ -146,6 +146,18 @@
       <UserCode>true</UserCode>
       <id>547fcd8d-5a7e-4506-a460-8a893dbe5217</id>
     </Compile>
+    <Compile Include="toms_recording.cs">
+      <BoundTo>33c7b770-b691-4413-9329-b9c7d00aba94</BoundTo>
+      <DependentUpon>toms_recording.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f350181b-76de-4b15-b3d6-349d81f4c1f8</id>
+    </Compile>
+    <Compile Include="toms_recording.UserCode.cs">
+      <BoundTo>33c7b770-b691-4413-9329-b9c7d00aba94</BoundTo>
+      <DependentUpon>toms_recording.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>3391306a-cfd3-4e23-9a25-9ab9903694dc</id>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config">
@@ -166,6 +178,11 @@
       <BoundTo>d8e0a7bd-677a-4581-acf1-e5b53be9e287</BoundTo>
       <id>f5e9ea8f-748e-4bcf-9038-4caec86740c8</id>
       <recordtableid>58817af0-aefe-40d6-8978-eda77a07838d</recordtableid>
+    </None>
+    <None Include="toms_recording.rxrec">
+      <BoundTo>d8e0a7bd-677a-4581-acf1-e5b53be9e287</BoundTo>
+      <id>33c7b770-b691-4413-9329-b9c7d00aba94</id>
+      <recordtableid>e675666a-6d7a-4a4c-95a7-79193df50eb7</recordtableid>
     </None>
   </ItemGroup>
   <ItemGroup>
