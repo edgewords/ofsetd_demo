@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modulegroupdoc>
+  <testsuiteentryhierarchy>
+    <flatlistofchildren>
+      <modulegroups
+      name="Ofsted_demo"
+      id="5061b6f1-f7be-4baa-8b9d-551871022f62"/>
+    </flatlistofchildren>
+    <childhierarchy>
+      <modulegroups
+      name="Ofsted_demo"
+      id="5061b6f1-f7be-4baa-8b9d-551871022f62"/>
+    </childhierarchy>
+  </testsuiteentryhierarchy>
+</modulegroupdoc>

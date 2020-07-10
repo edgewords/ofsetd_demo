@@ -1,0 +1,18 @@
+# .gitignore for Ranorex projects template
+**/obj/
+[Bb]in/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+build/
+bld/
+*.user
+*.pref
+
+# Ranorex Specific files
+**/Reports/
+*.rxuser
+*.rxlog
+*.rxlog.data
+
