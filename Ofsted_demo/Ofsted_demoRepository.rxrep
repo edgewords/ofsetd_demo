@@ -84,6 +84,16 @@ name="Ofsted_demoRepository">
 					/form[@controlname='MainForm']/container[@controlname='m_splitHorizontal']
 				</basepath>
 			</folder>
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="4c9c48ca-7052-4ac8-9da0-221ace824ae2"
+			name="Save"
+			refimgid="4f10d28c-a0ab-473b-b558-fe37d4aca2c4"
+			refpath="/form[@controlname='MainForm']/toolbar[@controlname='m_toolMain']/button[@accessiblename='Save']"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/?/?/button[@accessiblename='Save']
+			</item>
 			<basepath>
 				/form[@controlname='MainForm']
 			</basepath>
@@ -149,6 +159,94 @@ zKalWbxmnWSATm+AlpngiroArj8KsUmt5gFKaUne9Cs1r8leL2qDlLmE1yy+yQTbav14/7dXzFz4
 yZaEGpadW4AMrX7OizNSXsRMsNXpR2NLJ8H3FZytJ20YvYLmLEYlGiaeTfDBqhF8+KKMWkFT+v6g
 /SlfknSw1RXgsF7KJHilgi1Ub05uHl8SmjONqpp1mxo2yGpuau8SmfkGphMd0oZh2/Zd2HegRHSb
 3MQ8TyrVHxMR59kie/4bAAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="a522effe-3f6a-44de-882a-c96355680527"
+		isrooted="True"
+		name="KeyPromptForm"
+		refpath="/form[@controlname='KeyPromptForm']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="64164024-8c64-4dee-8be5-714691ff22b6"
+			name="Text"
+			refimgid="3e9824e7-c69b-49ec-a3f5-a473f8ad4ba8"
+			refpath="/form[@controlname='KeyPromptForm']/text[@controlname='m_tbPassword']/text[@accessiblerole='Text']"
+			searchtimeout="30000ms">
+				/form[@controlname='KeyPromptForm']/?/?/text[@accessiblerole='Text']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="943c9828-44a3-4bc1-9b3c-35a541260b24"
+			name="MBtnOK"
+			refimgid="7fec78d6-dd28-4d7a-865e-c55ce74199cd"
+			refpath="/form[@controlname='KeyPromptForm']/button[@controlname='m_btnOK']"
+			searchtimeout="30000ms">
+				/form[@controlname='KeyPromptForm']/button[@controlname='m_btnOK']
+			</item>
+			<basepath>
+				/form[@controlname='KeyPromptForm']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAJcSURBVDhPhZJdSJNRGMe3ldteYWsEQfZ1YaAh
+ZVRGRo0oaFESVq6lA5MCI7ooCHFudlFW5tYHESSZ+RFGEBVBhjeWoHQ1LesmooZG4ZauzeHm1M23
+f+c5b8cpNPrD/+J9z/k9z3k+VGlkZG5mHmNOMHuZS5n/K4k5aTab4fMNY3pGRnxKRnRSRoPnFtgZ
+2UMX/6VNGo0Gs7MyIlEZ3/wJfBqexrvPU3j7MY7XAzEEfiVR47pEQX4oSEp6tVoNWf6N0VCSw1kr
+VomM3BdvvMCT7gn0sEAtD5/RvwHmOSUps4DzN26FwWjimbu9MTjqOniQ1s4wGp+Po3cwjg35m+nf
+coKNVHNkIvVsutzTP87hl31RntloWgbL4XO4+TiMK20hDI0k6F6MAjR/9Q0tqJkCzIfbXkWwdl0h
+tuw8xuHae0F2PsnvUYAgdVvAVRfuoLzShbITTljLnSi216DI5oClxIE9xdUcPn97DJ6OMAp37OYB
+ZmhUotvOy62oPOtGxRk37KcacPTkNRw6Xo8iez322q5y+LR7FI67QVj2H+EBvDRn0bCcvALodBK0
+zKalWbxmnWSATm+AlpngiroArj8KsUmt5gFKaUne9Cs1r8leL2qDlLmE1yy+yQTbav14/7dXzFz4
+yZaEGpadW4AMrX7OizNSXsRMsNXpR2NLJ8H3FZytJ20YvYLmLEYlGiaeTfDBqhF8+KKMWkFT+v6g
+/SlfknSw1RXgsF7KJHilgi1Ub05uHl8SmjONqpp1mxo2yGpuau8SmfkGphMd0oZh2/Zd2HegRHSb
+3MQ8TyrVHxMR59kie/4bAAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="2c912d6d-dc62-4bb5-8771-4ae751298781"
+		isrooted="True"
+		name="KeePass"
+		refpath="/form[@title='KeePass']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="button,nativewindow"
+			capname="button"
+			id="7f753312-e6a4-435b-9293-8afd63582545"
+			name="ButtonYes"
+			refimgid="6f69bd1f-7605-4030-a588-2dda697f484c"
+			refpath="/form[@title='KeePass']/container[@class='DirectUIHWND']/element[@class='CtrlNotifySink' and @instance='0']/button[@text='&amp;Yes']"
+			searchtimeout="30000ms">
+				/form[@title='KeePass']/?/?/element[@instance='0']/button[@text='&amp;Yes']
+			</item>
+			<basepath>
+				/form[@title='KeePass']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAALQSURBVDhPdZJrSNNhFMYnzW22rJVRQd4RmfO2
+2cx0GypDKJJA8kt5SaEwNKMLWpCpWEkKm5uOjAyzlEjILt4QzCl+CNIijNkXqT5YrtKl021ZOp7e
+81+a3Q4cGP+9v3PO85zD+0dEszT6+PiMBweHOCnpN/tmYBlFD/4XQpbXNBqNu7OrG1/mXLDZl2Gd
+WcLklBPt9zuRsCfJzd6YWAoIWBtCPp8/qNPp4Fx0Y2p6Cf3D4yirrEdpWR1aH45hYNSJ8beLqKyq
+BXtrZsxvRRr1ej0WXG68//wddaZWiMW+kMrkCJfKsV68AWfKW9DWZ4f5uZMVrgFjGjwo00xjU2eC
+R8amsEmyBcVnqzH0wonepw7kFFTBd6MfDG3vUN8+i+GXLih3q0hOJBUwkmYae2LyGxqbu9hjCcyj
+CxzcMTiP2z02NoUEhRce4OodG2rbbLhx6xFNoeeJRKLXZBjBryYWcammBdt3BK7CNHbT4zls3hqA
+w4VNqGiaQalpGgMjsxAIhBZeSEioc2ZumYOfWVzQpB5AtEKNyFg1IqLVCI9SIUymQqhUBaliPwcX
+6z6hwzwP/4BgB4/t2WFl4xNMmjMOFSMtPQ+p+/KQU2TAkZM3EZ+cgzhNNpSpxzn4aPVH3Oufx07/
+oAVOAu15xbD0zCKk7M2FJi0Xx0ruorC8D3HqbMQkZUOeXMDBWRVWdA7ZPBJYGOhIaM+kOTElE5EK
+LSJitcg60Yz8c90IlWkRJNUiTH6Qg/MvW2G83kEm6qhAlDI+wW1585UzzG9bILy9heCvyXV8T4ol
+Acg4/wG3e+2QxyXSGmVUgMJEF0ZHQnumVa24vaKZOhNM/50quULdjR7UEwJ2ngMXK2u5I6E9/wnT
+2C09dpwurYaXl9cTxnh70F9Bt92wS5nopiOhPZMn5DYZRppjFAk0NnX+C14bdJ56oVBkYWtyUP50
+mwxb1ewJHu8HT5XoEEGuhlIAAAAASUVORK5CYII=
 			</icon>
 		</appfolder>
 		<basepath>

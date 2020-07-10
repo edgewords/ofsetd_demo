@@ -83,51 +83,59 @@ namespace Ofsted_demo
             Host.Local.RunApplication("C:\\Program Files (x86)\\KeePass Password Safe 2\\KeePass.exe", "", "C:\\Program Files (x86)\\KeePass Password Safe 2", false);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MainForm.MSplitHorizontal.General' at 25;7.", repo.MainForm.MSplitHorizontal.GeneralInfo, new RecordItemIndex(1));
-            repo.MainForm.MSplitHorizontal.General.Click("25;7");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'KeyPromptForm.Text' at 58;5.", repo.KeyPromptForm.TextInfo, new RecordItemIndex(1));
+            repo.KeyPromptForm.Text.Click("58;5");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MainForm.AddEntry' at 11;11.", repo.MainForm.AddEntryInfo, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'password' with focus on 'KeyPromptForm.Text'.", repo.KeyPromptForm.TextInfo, new RecordItemIndex(2));
+            repo.KeyPromptForm.Text.PressKeys("password");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'KeyPromptForm.MBtnOK' at 56;15.", repo.KeyPromptForm.MBtnOKInfo, new RecordItemIndex(3));
+            repo.KeyPromptForm.MBtnOK.Click("56;15");
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MainForm.AddEntry' at 11;11.", repo.MainForm.AddEntryInfo, new RecordItemIndex(4));
             repo.MainForm.AddEntry.Click("11;11");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PwEntryForm.Text' at 19;9.", repo.PwEntryForm.TextInfo, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PwEntryForm.Text' at 19;9.", repo.PwEntryForm.TextInfo, new RecordItemIndex(5));
             repo.PwEntryForm.Text.Click("19;9");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'edgewords' with focus on 'PwEntryForm.Text'.", repo.PwEntryForm.TextInfo, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'edgewords' with focus on 'PwEntryForm.Text'.", repo.PwEntryForm.TextInfo, new RecordItemIndex(6));
             repo.PwEntryForm.Text.PressKeys("edgewords");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PwEntryForm.UserName' at 48;12.", repo.PwEntryForm.UserNameInfo, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PwEntryForm.UserName' at 48;12.", repo.PwEntryForm.UserNameInfo, new RecordItemIndex(7));
             repo.PwEntryForm.UserName.Click("48;12");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'edge' with focus on 'PwEntryForm.UserName'.", repo.PwEntryForm.UserNameInfo, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'edge' with focus on 'PwEntryForm.UserName'.", repo.PwEntryForm.UserNameInfo, new RecordItemIndex(8));
             repo.PwEntryForm.UserName.PressKeys("edge");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PwEntryForm.UserName' at 252;340.", repo.PwEntryForm.UserNameInfo, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PwEntryForm.UserName' at 252;340.", repo.PwEntryForm.UserNameInfo, new RecordItemIndex(9));
             repo.PwEntryForm.UserName.Click("252;340");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MainForm.MSplitHorizontal.Edgewords' at 44;13.", repo.MainForm.MSplitHorizontal.EdgewordsInfo, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MainForm.MSplitHorizontal.Edgewords' at 44;13.", repo.MainForm.MSplitHorizontal.EdgewordsInfo, new RecordItemIndex(10));
             repo.MainForm.MSplitHorizontal.Edgewords.Click("44;13");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Delete}' with focus on 'MainForm.MSplitHorizontal.Edgewords'.", repo.MainForm.MSplitHorizontal.EdgewordsInfo, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Delete}' with focus on 'MainForm.MSplitHorizontal.Edgewords'.", repo.MainForm.MSplitHorizontal.EdgewordsInfo, new RecordItemIndex(11));
             repo.MainForm.MSplitHorizontal.Edgewords.PressKeys("{Delete}");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MainForm.MSplitHorizontal.Edgewords' at -342;128.", repo.MainForm.MSplitHorizontal.EdgewordsInfo, new RecordItemIndex(10));
-            repo.MainForm.MSplitHorizontal.Edgewords.Click("-342;128");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'KeePass.ButtonYes' at Center.", repo.KeePass.ButtonYesInfo, new RecordItemIndex(12));
+            repo.KeePass.ButtonYes.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MainForm.MSplitHorizontal.Outline' at 66;-14.", repo.MainForm.MSplitHorizontal.OutlineInfo, new RecordItemIndex(11));
-            repo.MainForm.MSplitHorizontal.Outline.Click("66;-14");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MainForm.Save' at Center.", repo.MainForm.SaveInfo, new RecordItemIndex(13));
+            repo.MainForm.Save.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MainForm.Close' at 26;10.", repo.MainForm.CloseInfo, new RecordItemIndex(12));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MainForm.Close' at 26;10.", repo.MainForm.CloseInfo, new RecordItemIndex(14));
             repo.MainForm.Close.Click("26;10");
             Delay.Milliseconds(200);
             

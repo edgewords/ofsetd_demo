@@ -29,6 +29,8 @@ namespace Ofsted_demo
         static Ofsted_demoRepository instance = new Ofsted_demoRepository();
         Ofsted_demoRepositoryFolders.MainFormAppFolder _mainform;
         Ofsted_demoRepositoryFolders.PwEntryFormAppFolder _pwentryform;
+        Ofsted_demoRepositoryFolders.KeyPromptFormAppFolder _keypromptform;
+        Ofsted_demoRepositoryFolders.KeePassAppFolder _keepass;
 
         /// <summary>
         /// Gets the singleton class instance representing the Ofsted_demoRepository element repository.
@@ -47,6 +49,8 @@ namespace Ofsted_demo
         {
             _mainform = new Ofsted_demoRepositoryFolders.MainFormAppFolder(this);
             _pwentryform = new Ofsted_demoRepositoryFolders.PwEntryFormAppFolder(this);
+            _keypromptform = new Ofsted_demoRepositoryFolders.KeyPromptFormAppFolder(this);
+            _keepass = new Ofsted_demoRepositoryFolders.KeePassAppFolder(this);
         }
 
 #region Variables
@@ -82,6 +86,24 @@ namespace Ofsted_demo
         {
             get { return _pwentryform; }
         }
+
+        /// <summary>
+        /// The KeyPromptForm folder.
+        /// </summary>
+        [RepositoryFolder("a522effe-3f6a-44de-882a-c96355680527")]
+        public virtual Ofsted_demoRepositoryFolders.KeyPromptFormAppFolder KeyPromptForm
+        {
+            get { return _keypromptform; }
+        }
+
+        /// <summary>
+        /// The KeePass folder.
+        /// </summary>
+        [RepositoryFolder("2c912d6d-dc62-4bb5-8771-4ae751298781")]
+        public virtual Ofsted_demoRepositoryFolders.KeePassAppFolder KeePass
+        {
+            get { return _keepass; }
+        }
     }
 
     /// <summary>
@@ -99,6 +121,7 @@ namespace Ofsted_demo
             Ofsted_demoRepositoryFolders.MSplitHorizontalFolder _msplithorizontal;
             RepoItemInfo _addentryInfo;
             RepoItemInfo _closeInfo;
+            RepoItemInfo _saveInfo;
 
             /// <summary>
             /// Creates a new MainForm  folder.
@@ -109,6 +132,7 @@ namespace Ofsted_demo
                 _msplithorizontal = new Ofsted_demoRepositoryFolders.MSplitHorizontalFolder(this);
                 _addentryInfo = new RepoItemInfo(this, "AddEntry", "?/?/button[@accessiblename='Add Entry']", 30000, null, "4f864c2a-cd12-4901-b3f5-38a6eaa0739d");
                 _closeInfo = new RepoItemInfo(this, "Close", "?/?/button[@accessiblename='Close']", 30000, null, "648b21f8-d6bd-46d1-be20-166ee1aac22f");
+                _saveInfo = new RepoItemInfo(this, "Save", "?/?/button[@accessiblename='Save']", 30000, null, "4c9c48ca-7052-4ac8-9da0-221ace824ae2");
             }
 
             /// <summary>
@@ -180,6 +204,30 @@ namespace Ofsted_demo
                 get
                 {
                     return _closeInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Save item.
+            /// </summary>
+            [RepositoryItem("4c9c48ca-7052-4ac8-9da0-221ace824ae2")]
+            public virtual Ranorex.Button Save
+            {
+                get
+                {
+                    return _saveInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Save item info.
+            /// </summary>
+            [RepositoryItemInfo("4c9c48ca-7052-4ac8-9da0-221ace824ae2")]
+            public virtual RepoItemInfo SaveInfo
+            {
+                get
+                {
+                    return _saveInfo;
                 }
             }
 
@@ -399,6 +447,164 @@ namespace Ofsted_demo
                 get
                 {
                     return _usernameInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The KeyPromptFormAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("a522effe-3f6a-44de-882a-c96355680527")]
+        public partial class KeyPromptFormAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _textInfo;
+            RepoItemInfo _mbtnokInfo;
+
+            /// <summary>
+            /// Creates a new KeyPromptForm  folder.
+            /// </summary>
+            public KeyPromptFormAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("KeyPromptForm", "/form[@controlname='KeyPromptForm']", parentFolder, 30000, null, true, "a522effe-3f6a-44de-882a-c96355680527", "")
+            {
+                _textInfo = new RepoItemInfo(this, "Text", "?/?/text[@accessiblerole='Text']", 30000, null, "64164024-8c64-4dee-8be5-714691ff22b6");
+                _mbtnokInfo = new RepoItemInfo(this, "MBtnOK", "button[@controlname='m_btnOK']", 30000, null, "943c9828-44a3-4bc1-9b3c-35a541260b24");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("a522effe-3f6a-44de-882a-c96355680527")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("a522effe-3f6a-44de-882a-c96355680527")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Text item.
+            /// </summary>
+            [RepositoryItem("64164024-8c64-4dee-8be5-714691ff22b6")]
+            public virtual Ranorex.Text Text
+            {
+                get
+                {
+                    return _textInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Text item info.
+            /// </summary>
+            [RepositoryItemInfo("64164024-8c64-4dee-8be5-714691ff22b6")]
+            public virtual RepoItemInfo TextInfo
+            {
+                get
+                {
+                    return _textInfo;
+                }
+            }
+
+            /// <summary>
+            /// The MBtnOK item.
+            /// </summary>
+            [RepositoryItem("943c9828-44a3-4bc1-9b3c-35a541260b24")]
+            public virtual Ranorex.Button MBtnOK
+            {
+                get
+                {
+                    return _mbtnokInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The MBtnOK item info.
+            /// </summary>
+            [RepositoryItemInfo("943c9828-44a3-4bc1-9b3c-35a541260b24")]
+            public virtual RepoItemInfo MBtnOKInfo
+            {
+                get
+                {
+                    return _mbtnokInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The KeePassAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("2c912d6d-dc62-4bb5-8771-4ae751298781")]
+        public partial class KeePassAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _buttonyesInfo;
+
+            /// <summary>
+            /// Creates a new KeePass  folder.
+            /// </summary>
+            public KeePassAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("KeePass", "/form[@title='KeePass']", parentFolder, 30000, null, true, "2c912d6d-dc62-4bb5-8771-4ae751298781", "")
+            {
+                _buttonyesInfo = new RepoItemInfo(this, "ButtonYes", "?/?/element[@instance='0']/button[@text='&Yes']", 30000, null, "7f753312-e6a4-435b-9293-8afd63582545");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("2c912d6d-dc62-4bb5-8771-4ae751298781")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("2c912d6d-dc62-4bb5-8771-4ae751298781")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ButtonYes item.
+            /// </summary>
+            [RepositoryItem("7f753312-e6a4-435b-9293-8afd63582545")]
+            public virtual Ranorex.Button ButtonYes
+            {
+                get
+                {
+                    return _buttonyesInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ButtonYes item info.
+            /// </summary>
+            [RepositoryItemInfo("7f753312-e6a4-435b-9293-8afd63582545")]
+            public virtual RepoItemInfo ButtonYesInfo
+            {
+                get
+                {
+                    return _buttonyesInfo;
                 }
             }
         }
