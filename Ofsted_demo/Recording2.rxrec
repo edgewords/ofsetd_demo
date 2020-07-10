@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="8dcc42ba-a13d-4004-b306-590fa7bd2aab"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Recording2"
+	namespace="Ofsted_demo">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<loggingrecorditem
+		category="User"
+		enabled="True"
+		message="hgello"
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="e4509d38-68f0-4782-b15f-98b77011ddf6">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</loggingrecorditem>
+	</recorditems>
+	<repository
+	id="68bd214a-7657-4353-99e4-74c5b8c21736"
+	name="Ofsted_demoRepository"
+	relativepath="Ofsted_demoRepository.rxrep">
+		<codegen
+		classname="Ofsted_demoRepository"
+		namespace="Ofsted_demo">
+		</codegen>
+		<rootfolder
+		id="ff0984de-0aec-4132-950f-c60cfc296620"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Recording2.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>
