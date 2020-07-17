@@ -459,6 +459,7 @@ namespace Ofsted_demo
         {
             RepoItemInfo _textInfo;
             RepoItemInfo _mbtnokInfo;
+            RepoItemInfo _mbtnhelpInfo;
 
             /// <summary>
             /// Creates a new KeyPromptForm  folder.
@@ -468,6 +469,7 @@ namespace Ofsted_demo
             {
                 _textInfo = new RepoItemInfo(this, "Text", "?/?/text[@accessiblerole='Text']", 30000, null, "64164024-8c64-4dee-8be5-714691ff22b6");
                 _mbtnokInfo = new RepoItemInfo(this, "MBtnOK", "button[@controlname='m_btnOK']", 30000, null, "943c9828-44a3-4bc1-9b3c-35a541260b24");
+                _mbtnhelpInfo = new RepoItemInfo(this, "MBtnHelp", "button[@controlname='m_btnHelp']", 30000, null, "1dca1e2d-6b5d-4045-9e93-9f14a1793829");
             }
 
             /// <summary>
@@ -539,6 +541,30 @@ namespace Ofsted_demo
                 get
                 {
                     return _mbtnokInfo;
+                }
+            }
+
+            /// <summary>
+            /// The MBtnHelp item.
+            /// </summary>
+            [RepositoryItem("1dca1e2d-6b5d-4045-9e93-9f14a1793829")]
+            public virtual Ranorex.Button MBtnHelp
+            {
+                get
+                {
+                    return _mbtnhelpInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The MBtnHelp item info.
+            /// </summary>
+            [RepositoryItemInfo("1dca1e2d-6b5d-4045-9e93-9f14a1793829")]
+            public virtual RepoItemInfo MBtnHelpInfo
+            {
+                get
+                {
+                    return _mbtnhelpInfo;
                 }
             }
         }
