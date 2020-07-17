@@ -83,6 +83,9 @@ namespace Ofsted_demo
             
             Report.Log(ReportLevel.Info, "User", "goodbye", new RecordItemIndex(1));
             
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(2));
+            Delay.Duration(500, false);
+            
         }
 
 #region Image Feature Data
