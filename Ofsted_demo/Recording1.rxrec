@@ -4146,6 +4146,18 @@ aKKKR7QUDoKKB0FABRRRQAUUUUAFFFFABRRRQAUUUUAA70UDvRQBl+I/+QWf98VyldX4j/5BZ/3x
 XKCtIGcxaWkpa0ICikpaYgp9v/x8xf74/nUdSW//AB8xf74/nSYnsbtFFFYHnH//2Q==
 			</helperscreenshot>
 		</mouseitem>
+		<loggingrecorditem
+		category="User"
+		enabled="True"
+		message="Added by steve"
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="af00c65a-6cdd-441d-81a5-b2b73b59f4ea">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</loggingrecorditem>
 	</recorditems>
 	<repository
 	id="68bd214a-7657-4353-99e4-74c5b8c21736"

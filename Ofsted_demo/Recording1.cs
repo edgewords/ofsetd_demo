@@ -139,6 +139,8 @@ namespace Ofsted_demo
             repo.MainForm.Close.Click("26;10");
             Delay.Milliseconds(200);
             
+            Report.Log(ReportLevel.Info, "User", "Added by steve", new RecordItemIndex(15));
+            
         }
 
 #region Image Feature Data
