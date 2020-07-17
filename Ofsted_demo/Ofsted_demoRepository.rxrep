@@ -190,6 +190,16 @@ yZaEGpadW4AMrX7OizNSXsRMsNXpR2NLJ8H3FZytJ20YvYLmLEYlGiaeTfDBqhF8+KKMWkFT+v6g
 			searchtimeout="30000ms">
 				/form[@controlname='KeyPromptForm']/button[@controlname='m_btnOK']
 			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="1dca1e2d-6b5d-4045-9e93-9f14a1793829"
+			name="MBtnHelp"
+			refimgid="ca82f8bc-e395-4677-9d35-b33013f4fa76"
+			refpath="/form[@controlname='KeyPromptForm']/button[@controlname='m_btnHelp']"
+			searchtimeout="30000ms">
+				/form[@controlname='KeyPromptForm']/button[@controlname='m_btnHelp']
+			</item>
 			<basepath>
 				/form[@controlname='KeyPromptForm']
 			</basepath>
