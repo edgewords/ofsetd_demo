@@ -61,6 +61,18 @@ mode="Global">
 			<bindings>
 			</bindings>
 		</loggingrecorditem>
+		<loggingrecorditem
+		category="User"
+		enabled="True"
+		message="Please dont break"
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="01dcc3c9-6d7f-49f9-be7d-60e061fa47fe">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</loggingrecorditem>
 	</recorditems>
 	<repository
 	id="68bd214a-7657-4353-99e4-74c5b8c21736"
