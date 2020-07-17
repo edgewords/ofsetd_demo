@@ -83,6 +83,8 @@ namespace Ofsted_demo
             
             Report.Log(ReportLevel.Info, "User", "goodbye", new RecordItemIndex(1));
             
+            Report.Log(ReportLevel.Info, "User", "Hello from steve", new RecordItemIndex(2));
+            
         }
 
 #region Image Feature Data

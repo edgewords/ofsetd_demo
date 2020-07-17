@@ -49,6 +49,18 @@ mode="Global">
 			<bindings>
 			</bindings>
 		</loggingrecorditem>
+		<loggingrecorditem
+		category="User"
+		enabled="True"
+		message="Hello from steve"
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="2f028cc8-0afd-4000-ac23-bd7d764d294a">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</loggingrecorditem>
 	</recorditems>
 	<repository
 	id="68bd214a-7657-4353-99e4-74c5b8c21736"
