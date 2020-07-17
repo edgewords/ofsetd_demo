@@ -90,6 +90,10 @@ namespace Ofsted_demo
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(4));
             Delay.Duration(500, false);
             
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'KeyPromptForm.MBtnCancel' at 40;12.", repo.KeyPromptForm.MBtnCancelInfo, new RecordItemIndex(5));
+            repo.KeyPromptForm.MBtnCancel.Click("40;12");
+            Delay.Milliseconds(200);
+            
         }
 
 #region Image Feature Data

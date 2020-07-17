@@ -1,4 +1,5 @@
-﻿<repository
+<?xml version="1.0" encoding="utf-8"?>
+<repository
 id="68bd214a-7657-4353-99e4-74c5b8c21736"
 name="Ofsted_demoRepository">
 	<codegen
@@ -189,6 +190,16 @@ yZaEGpadW4AMrX7OizNSXsRMsNXpR2NLJ8H3FZytJ20YvYLmLEYlGiaeTfDBqhF8+KKMWkFT+v6g
 			refpath="/form[@controlname='KeyPromptForm']/button[@controlname='m_btnOK']"
 			searchtimeout="30000ms">
 				/form[@controlname='KeyPromptForm']/button[@controlname='m_btnOK']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="45640eb1-e88e-4b1d-ba0e-ccafb950ccbb"
+			name="MBtnCancel"
+			refimgid="0d110b95-0915-453e-acf8-d09ebab99efb"
+			refpath="/form[@controlname='KeyPromptForm']/button[@controlname='m_btnCancel']"
+			searchtimeout="30000ms">
+				/form[@controlname='KeyPromptForm']/button[@controlname='m_btnCancel']
 			</item>
 			<item
 			addcaps="button,control,nativewindow"
