@@ -4158,6 +4158,18 @@ XKCtIGcxaWkpa0ICikpaYgp9v/x8xf74/nUdSW//AB8xf74/nSYnsbtFFFYHnH//2Q==
 			<bindings>
 			</bindings>
 		</loggingrecorditem>
+		<loggingrecorditem
+		category="User"
+		enabled="True"
+		message="Another message by steve"
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="d0b74afa-82c6-462b-b2ec-48b938b95e74">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</loggingrecorditem>
 	</recorditems>
 	<repository
 	id="68bd214a-7657-4353-99e4-74c5b8c21736"
