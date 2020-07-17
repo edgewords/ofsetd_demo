@@ -141,6 +141,8 @@ namespace Ofsted_demo
             
             Report.Log(ReportLevel.Info, "User", "Added by steve", new RecordItemIndex(15));
             
+            Report.Log(ReportLevel.Info, "User", "Another message by steve", new RecordItemIndex(16));
+            
         }
 
 #region Image Feature Data
